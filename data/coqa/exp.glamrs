@@ -1,0 +1,812 @@
+# ::snt_id::amr-exp::snt1
+# ::snt1 Once there was a beautiful fish named Asta .
+(s1f / fish~5
+     :name (s1n / name~7
+                :op1 "Asta"~7)
+     :time (s1o / once~0)
+     :ARG1-of (s1b / beautiful-02~4))
+
+
+# ::snt_id::amr-exp::snt2
+# ::snt2 Asta lived in the ocean .
+(s2l / live-01~1
+     :ARG0 (s2p / person~0
+                :name (s2n / name~0
+                           :op1 "Asta"~0))
+     :location (s2o / ocean~4)
+     :event-structure (se / subevents
+                          :ë (r / reside
+                                :THEME s2l
+                                :LOCATION (R / ROLE))))
+
+
+# ::snt_id::amr-exp::snt3
+# ::snt3 There were lots of other fish in the ocean where Asta lived .
+(s3f / fish~5
+     :quant (s3l2 / lot~2)
+     :location (s3o / ocean~8
+                    :location-of (s3l / live-01~11
+                                      :ARG0 (s3p / person~10
+                                                 :name (s3n / name~10
+                                                            :op1 "Asta"~10))
+                                      :event-structure (se / subevents
+                                                           :ë (r / reside
+                                                                 :THEME s3l
+                                                                 :LOCATION (R / ROLE)))))
+     :mod (s3o2 / other~4))
+
+
+# ::snt_id::amr-exp::snt4
+# ::snt4 They played all day long .
+(s4p / play-01~1
+     :ARG0 (s4t / they~0)
+     :duration (s4d / day~3
+                    :mod (s4a / all~2))
+     :event-structure (se / subevents
+                          :ë1 (p / perform
+                                 :AGENT (R / ROLE)
+                                 :THEME (R1 / ROLE))))
+
+
+# ::snt_id::amr-exp::snt5
+# ::snt5 One day , a bottle floated by over the heads of Asta and his friends .
+(s5f / float-01~5
+     :ARG1 (s5b / bottle~4)
+     :ARG2 (s5o2 / over~7
+                 :op1 (s5h2 / head~9
+                            :part-of (s5a / and~12
+                                          :op1 (s5p / person~11
+                                                    :name (s5n / name~11
+                                                               :op1 "Asta"~11))
+                                          :op2 (s5p2 / person~14
+                                                     :ARG0-of (s5h / have-rel-role-91~14
+                                                                   :ARG2 (s5f2 / friend~14)
+                                                                   :ARG1 "p")))))
+     :time (s5d / day~1
+                :mod (s5o / one~0))
+     :event-structure (se / subevents
+                          :e1 (h / has_location
+                                 :THEME s5f
+                                 :?INITIAL_LOCATION (R / ROLE))
+                          :ë2 (a / and
+                                 :op1 (m / motion
+                                         :THEME s5f
+                                         :?TRAJECTORY (R1 / ROLE))
+                                 :op2 (h1 / has_location
+                                          :polarity -
+                                          :THEME s5f
+                                          :?INITIAL_LOCATION (R2 / ROLE)))
+                          :e3 (h2 / has_location
+                                  :THEME s5f
+                                  :DESTINATION s5o2)))
+
+
+# ::snt_id::amr-exp::snt6
+# ::snt6 They looked up and saw the bottle .
+(s6a / and~3
+     :op1 (s6l / look-01~1
+               :ARG0 (s6t / they~0)
+               :direction (s6u / up~2)
+               :event-structure (se / subevents
+                                    :ë (s / search
+                                          :AGENT s6l
+                                          :LOCATION (R / ROLE)
+                                          :THEME (R1 / ROLE))))
+     :op2 (s6s / see-01~4
+               :ARG1 (s6b / bottle~6)
+               :ARG0 "t"
+               :event-structure (se1 / subevents
+                                     :e1 (p / perceive
+                                            :EXPERIENCER s6l
+                                            :STIMULUS s6b))))
+
+
+# ::snt_id::amr-exp::snt7
+# ::snt7 "
+(s7q / quote-01~0)
+
+
+# ::snt_id::amr-exp::snt8
+# ::snt8 What is it ? " said Asta 's friend Sharkie .
+(s8s / say-01~5
+     :ARG0 (s8p2 / person~9
+                 :name (s8n2 / name~9
+                             :op1 "Sharkie"~9)
+                 :ARG0-of (s8h / have-rel-role-91~8
+                               :ARG1 (s8p / person~6
+                                          :name (s8n / name~6
+                                                     :op1 "Asta"~6))
+                               :ARG2 (s8f / friend~8)))
+     :ARG1 (s8i / it~2
+                :domain (s8a / amr-unknown~0))
+     :event-structure (se / subevents
+                          :E (i / indicate
+                                :PIVOT (R / ROLE)
+                                :TOPIC s8s)))
+
+
+# ::snt_id::amr-exp::snt9
+# ::snt9 "
+(s9q / quote-01~0)
+
+
+# ::snt_id::amr-exp::snt10
+# ::snt10 It looks like a bird 's belly , " said Asta .
+(s10s / say-01~9
+      :ARG0 (s10p / person~10
+                  :name (s10n / name~10
+                              :op1 "Asta"~10))
+      :ARG1 (s10l / look-02~1
+                  :ARG0 (s10i / it~0)
+                  :ARG1 (s10b / belly~6
+                              :part-of (s10b2 / bird~4))
+                  :event-structure (se1 / subevents
+                                        :e1 (p / perceive
+                                               :?EXPERIENCER (R1 / ROLE)
+                                               :STIMULUS s10l)))
+      :event-structure (se / subevents
+                           :E (i / indicate
+                                 :PIVOT (R / ROLE)
+                                 :TOPIC s10l)))
+
+
+# ::snt_id::amr-exp::snt11
+# ::snt11 But when they swam closer , it was not a bird 's belly .
+(s11c2 / contrast-01~0
+       :ARG2 (s11b / belly~12
+                   :domain (s11i / it~6)
+                   :part-of (s11b2 / bird~10)
+                   :time (s11s / swim-01~3
+                               :ARG0 (s11t / they~2)
+                               :time (s11c / close-10~4
+                                           :ARG1 "s")
+                               :event-structure (se / subevents
+                                                    :e1 (h / has_location
+                                                           :THEME (R / ROLE)
+                                                           :?INITIAL_LOCATION (R1 / ROLE))
+                                                    :ë2 (a / and
+                                                           :op1 (m / motion
+                                                                   :THEME (R2 / ROLE)
+                                                                   :?TRAJECTORY (R3 / ROLE))
+                                                           :op2 (h1 / has_location
+                                                                    :polarity -
+                                                                    :THEME (R4 / ROLE)
+                                                                    :?INITIAL_LOCATION (R5 / ROLE)))
+                                                    :e3 (h2 / has_location
+                                                            :THEME (R6 / ROLE)
+                                                            :DESTINATION s11c)))
+                   :polarity 0))
+
+
+# ::snt_id::amr-exp::snt12
+# ::snt12 It was hard and clear , and there was something inside it .
+(s12a / and~6
+      :op1 (s12h / hard-04~2
+                 :ARG1 (s12i2 / it~0))
+      :op2 (s12c / clear-06~4
+                 :ARG1 "i2")
+      :op3 (s12s / something~9
+                 :location (s12i / inside~10
+                                 :op1 "i2")))
+
+
+# ::snt_id::amr-exp::snt13
+# ::snt13 The bottle floated above them .
+(s13f / float-01~2
+      :ARG1 (s13b / bottle~1)
+      :ARG2 (s13a / above~3
+                  :op1 (s13t / they~4))
+      :event-structure (se / subevents
+                           :e1 (h / has_location
+                                  :THEME s13f
+                                  :?INITIAL_LOCATION (R / ROLE))
+                           :ë2 (a / and
+                                  :op1 (m / motion
+                                          :THEME s13f
+                                          :?TRAJECTORY (R1 / ROLE))
+                                  :op2 (h1 / has_location
+                                           :polarity -
+                                           :THEME s13f
+                                           :?INITIAL_LOCATION (R2 / ROLE)))
+                           :e3 (h2 / has_location
+                                   :THEME s13f
+                                   :DESTINATION s13a)))
+
+
+# ::snt_id::amr-exp::snt14
+# ::snt14 They wanted to open it .
+(s14w / want-01~1
+      :ARG0 (s14t / they~0)
+      :ARG1 (s14o / open-01~3
+                  :ARG1 (s14i / it~4)
+                  :ARG0 "t"
+                  :event-structure (se1 / subevents
+                                        :e1 (h2 / has_state
+                                                :polarity -
+                                                :PATIENT s14i
+                                                :V_FINAL_STATE (R6 / ROLE))
+                                        :e2 (d1 / do
+                                                :ACTION s14o
+                                                :AGENT s14w)
+                                        :e3 (a1 / and
+                                                :op1 (c1 / cause)
+                                                :op2 (h3 / has_state
+                                                         :PATIENT s14i
+                                                         :V_FINAL_STATE (R7 / ROLE)))))
+      :event-structure (se / subevents
+                           :e1 (h / has_organization_role
+                                  :polarity -
+                                  :THEME (R / ROLE)
+                                  :?ATTRIBUTE (R1 / ROLE)
+                                  :BENEFICIARY (R2 / ROLE))
+                           :e2 (d / do
+                                  :ACTION s14w
+                                  :AGENT s14w)
+                           :e3 (a / and
+                                  :op1 (h1 / has_organization_role
+                                           :THEME (R3 / ROLE)
+                                           :?ATTRIBUTE (R4 / ROLE)
+                                           :BENEFICIARY (R5 / ROLE))
+                                  :op2 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt15
+# ::snt15 They wanted to see what was inside .
+(s15w / want-01~1
+      :ARG0 (s15t / they~0)
+      :ARG1 (s15s / see-01~3
+                  :ARG1 (s15t2 / thing~4
+                               :location (s15i / inside~6))
+                  :ARG0 "t"
+                  :event-structure (se1 / subevents
+                                        :e1 (p / perceive
+                                               :EXPERIENCER s15w
+                                               :STIMULUS s15t2)))
+      :event-structure (se / subevents
+                           :e1 (h / has_organization_role
+                                  :polarity -
+                                  :THEME (R / ROLE)
+                                  :?ATTRIBUTE (R1 / ROLE)
+                                  :BENEFICIARY (R2 / ROLE))
+                           :e2 (d / do
+                                  :ACTION s15w
+                                  :AGENT s15w)
+                           :e3 (a / and
+                                  :op1 (h1 / has_organization_role
+                                           :THEME (R3 / ROLE)
+                                           :?ATTRIBUTE (R4 / ROLE)
+                                           :BENEFICIARY (R5 / ROLE))
+                                  :op2 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt16
+# ::snt16 So they caught the bottle and carried it down to the bottom of the ocean .
+(s16c3 / cause-01~0
+       :ARG1 (s16a / and~5
+                   :op1 (s16c2 / catch-01~2
+                               :ARG0 (s16t / they~1)
+                               :ARG1 (s16b / bottle~4)
+                               :event-structure (se / subevents
+                                                    :e1 (a / and
+                                                           :op1 (h / has_possession
+                                                                   :?SOURCE (R / ROLE)
+                                                                   :THEME s16a)
+                                                           :op2 (h1 / has_possession
+                                                                    :polarity -
+                                                                    :AGENT s16c2
+                                                                    :THEME s16a))
+                                                    :e2 (t / transfer
+                                                           :AGENT s16c2
+                                                           :THEME s16a
+                                                           :?SOURCE (R1 / ROLE))
+                                                    :e3 (a1 / and
+                                                            :op1 (c / cause)
+                                                            :op2 (h2 / has_possession
+                                                                     :AGENT s16c2
+                                                                     :THEME s16a)
+                                                            :op3 (h3 / has_possession
+                                                                     :polarity -
+                                                                     :?SOURCE (R2 / ROLE)
+                                                                     :THEME s16a))))
+                   :op2 (s16c / carry-01~6
+                              :destination (s16b2 / bottom~11
+                                                  :part-of (s16o / ocean~14))
+                              :direction (s16d / down~8)
+                              :ARG0 "t"
+                              :ARG1 "b"
+                              :event-structure (se1 / subevents
+                                                    :e1 (h4 / has_location
+                                                            :THEME s16d
+                                                            :?INITIAL_LOCATION (R3 / ROLE))
+                                                    :e2 (h5 / has_location
+                                                            :AGENT s16c2
+                                                            :?INITIAL_LOCATION (R4 / ROLE))
+                                                    :e3 (d / do
+                                                           :ACTION s16c
+                                                           :AGENT s16c2)
+                                                    :ë4 (a2 / and
+                                                            :op1 (m / motion
+                                                                    :THEME s16d
+                                                                    :TRAJECTORY (R5 / ROLE))
+                                                            :op2 (h6 / has_location
+                                                                     :polarity -
+                                                                     :THEME s16d
+                                                                     :?INITIAL_LOCATION (R6 / ROLE))
+                                                            :op3 (c1 / cause))
+                                                    :ë5 (a3 / and
+                                                            :op1 (m1 / motion
+                                                                     :AGENT s16c2
+                                                                     :TRAJECTORY (R7 / ROLE))
+                                                            :op2 (h7 / has_location
+                                                                     :polarity -
+                                                                     :AGENT s16c2
+                                                                     :?INITIAL_LOCATION (R8 / ROLE))
+                                                            :op3 (c2 / co-temporal))
+                                                    :e6 (h8 / has_location
+                                                            :THEME s16d
+                                                            :?DESTINATION (R9 / ROLE))
+                                                    :e7 (h9 / has_location
+                                                            :AGENT s16c2
+                                                            :?DESTINATION (R10 / ROLE))))))
+
+
+# ::snt_id::amr-exp::snt17
+# ::snt17 They cracked it open on a rock .
+(s17c / crack-02~1
+      :ARG0 (s17t / they~0)
+      :ARG1 (s17i / it~2)
+      :location (s17r / rock~6)
+      :manner (s17o / open-09~3
+                    :ARG1 "i")
+      :event-structure (se / subevents
+                           :e1 (a / and
+                                  :op1 (d / degradation_material_integrity
+                                          :polarity -
+                                          :PATIENT s17i)
+                                  :op2 (h / has_physical_form
+                                          :polarity -
+                                          :PATIENT s17i
+                                          :V_FINAL_STATE (R / ROLE)))
+                           :e2 (d1 / do
+                                   :ACTION s17c
+                                   :AGENT s17c)
+                           :e3 (a1 / and
+                                   :op1 (d2 / degradation_material_integrity
+                                            :PATIENT s17i)
+                                   :op2 (h1 / has_physical_form
+                                            :PATIENT s17i
+                                            :V_FINAL_STATE (R1 / ROLE))
+                                   :op3 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt18
+# ::snt18 When they got it open , they found what was inside .
+(s18f / find-01~7
+      :ARG0 (s18t / they~6)
+      :ARG1 (s18t2 / thing~8
+                   :location (s18i / inside~10
+                                   :op1 (s18i2 / it~3)))
+      :time (s18g / get-04~2
+                  :ARG1 (s18o / open-09~4
+                              :ARG0 "t"
+                              :ARG1 "i2")
+                  :ARG0 "t"
+                  :event-structure (se1 / subevents
+                                        :e1 (h4 / has_state
+                                                :PATIENT s18i2
+                                                :?INITIAL_STATE (R3 / ROLE))
+                                        :e2 (h5 / has_state
+                                                :PATIENT s18i2
+                                                :RESULT (R4 / ROLE))
+                                        : (o / opposition
+                                             :?INITIAL_STATE (R5 / ROLE)
+                                             :RESULT (R6 / ROLE))))
+      :event-structure (se / subevents
+                           :e1 (a / and
+                                  :op1 (h / has_possession
+                                          :?SOURCE (R / ROLE)
+                                          :THEME s18t2)
+                                  :op2 (h1 / has_possession
+                                           :polarity -
+                                           :AGENT s18f
+                                           :THEME s18t2))
+                           :e2 (t / transfer
+                                  :AGENT s18f
+                                  :THEME s18t2
+                                  :?SOURCE (R1 / ROLE))
+                           :e3 (a1 / and
+                                   :op1 (c / cause)
+                                   :op2 (h2 / has_possession
+                                            :AGENT s18f
+                                            :THEME s18t2)
+                                   :op3 (h3 / has_possession
+                                            :polarity -
+                                            :?SOURCE (R2 / ROLE)
+                                            :THEME s18t2))))
+
+
+# ::snt_id::amr-exp::snt19
+# ::snt19 It was a note .
+(s19n / note~3
+      :domain (s19i / it~0))
+
+
+# ::snt_id::amr-exp::snt20
+# ::snt20 The note was written in orange crayon on white paper .
+(s20w2 / write-01~3
+       :ARG1 (s20n / note~1)
+       :instrument (s20c / crayon~6
+                         :mod (s20o / orange~5))
+       :location (s20p / paper~9
+                       :ARG1-of (s20w / white-03~8))
+       :event-structure (se / subevents
+                            :E (h / has_information
+                                  :AGENT (R / ROLE)
+                                  :TOPIC s20n)
+                            :e1 (t / transfer_info
+                                   :AGENT (R1 / ROLE)
+                                   :TOPIC s20n
+                                   :?RECIPIENT (R2 / ROLE))
+                            :e2 (a / and
+                                   :op1 (h1 / has_information
+                                            :?RECIPIENT (R3 / ROLE)
+                                            :TOPIC s20n)
+                                   :op2 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt21
+# ::snt21 Asta could not read the note .
+(s21p2 / possible-01~1
+       :ARG1 (s21r / read-01~3
+                   :ARG0 (s21p / person~0
+                               :name (s21n / name~0
+                                           :op1 "Asta"~0))
+                   :ARG1 (s21n2 / note~5)
+                   :event-structure (se / subevents
+                                        :E (h / has_information
+                                              :AGENT s21p2
+                                              :TOPIC s21n2)
+                                        :e1 (t / transfer_info
+                                               :AGENT s21p2
+                                               :TOPIC s21n2
+                                               :?RECIPIENT (R / ROLE))
+                                        :e2 (a / and
+                                               :op1 (h1 / has_information
+                                                        :?RECIPIENT (R1 / ROLE)
+                                                        :TOPIC s21n2)
+                                               :op2 (c / cause))))
+       :polarity 1
+       :polarity 1)
+
+
+# ::snt_id::amr-exp::snt22
+# ::snt22 Sharkie could not read the note .
+(s22p2 / possible-01~1
+       :ARG1 (s22r / read-01~3
+                   :ARG0 (s22p / person~0
+                               :name (s22n / name~0
+                                           :op1 "Sharkie"~0))
+                   :ARG1 (s22n2 / note~5)
+                   :event-structure (se / subevents
+                                        :E (h / has_information
+                                              :AGENT s22p2
+                                              :TOPIC s22n2)
+                                        :e1 (t / transfer_info
+                                               :AGENT s22p2
+                                               :TOPIC s22n2
+                                               :?RECIPIENT (R / ROLE))
+                                        :e2 (a / and
+                                               :op1 (h1 / has_information
+                                                        :?RECIPIENT (R1 / ROLE)
+                                                        :TOPIC s22n2)
+                                               :op2 (c / cause))))
+       :polarity 1
+       :polarity 1)
+
+
+# ::snt_id::amr-exp::snt23
+# ::snt23 They took the note to Asta 's papa .
+(s23t / take-01~1
+      :ARG0 (s23t2 / they~0)
+      :ARG1 (s23n2 / note~3)
+      :ARG3 (s23p3 / person~7
+                   :ARG0-of (s23h / have-rel-role-91~7
+                                  :ARG1 (s23p2 / person~5
+                                               :name (s23n / name~5
+                                                           :op1 "Asta"~5))
+                                  :ARG2 (s23p / papa~7)))
+      :event-structure (se / subevents
+                           :e1 (a / and
+                                  :op1 (h / has_possession
+                                          :?SOURCE (R / ROLE)
+                                          :THEME s23n2)
+                                  :op2 (h1 / has_possession
+                                           :polarity -
+                                           :AGENT s23t
+                                           :THEME s23n2))
+                           :e2 (a1 / and
+                                   :op1 (t / transfer
+                                           :AGENT s23t
+                                           :THEME s23n2
+                                           :?SOURCE (R1 / ROLE))
+                                   :op2 (m / manner
+                                           :ILLEGAL (R2 / ROLE)
+                                           :AGENT s23t))
+                           :e3 (a2 / and
+                                   :op1 (c / cause)
+                                   :op2 (h2 / has_possession
+                                            :AGENT s23t
+                                            :THEME s23n2)
+                                   :op3 (h3 / has_possession
+                                            :polarity -
+                                            :?SOURCE (R3 / ROLE)
+                                            :THEME s23n2))))
+
+
+# ::snt_id::amr-exp::snt24
+# ::snt24 "
+(s24q / quote-01~0)
+
+
+# ::snt_id::amr-exp::snt25
+# ::snt25 What does it say ?
+(s25s / say-01~3
+      :ARG0 (s25i / it~2)
+      :ARG1 (s25a / amr-unknown~0)
+      :event-structure (se / subevents
+                           :E (i / indicate
+                                 :PIVOT (R / ROLE)
+                                 :TOPIC s25a)))
+
+
+# ::snt_id::amr-exp::snt26
+# ::snt26 "
+(s26q / quote-01~0)
+
+
+# ::snt_id::amr-exp::snt27
+# ::snt27 they asked .
+(s27a / ask-01~1
+      :ARG0 (s27t / they~0)
+      :event-structure (se / subevents
+                           :E (h / has_information
+                                 :AGENT s27a
+                                 :TOPIC (R / ROLE))
+                           :e1 (h1 / has_information
+                                   :polarity -
+                                   :?RECIPIENT (R1 / ROLE)
+                                   :TOPIC (R2 / ROLE))
+                           :e2 (t / transfer_info
+                                  :AGENT s27a
+                                  :TOPIC (R3 / ROLE)
+                                  :?RECIPIENT (R4 / ROLE))
+                           :e3 (a / and
+                                  :op1 (h2 / has_information
+                                           :?RECIPIENT (R5 / ROLE)
+                                           :TOPIC (R6 / ROLE))
+                                  :op2 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt28
+# ::snt28 Asta 's papa read the note .
+(s28r / read-01~3
+      :ARG0 (s28p2 / person~2
+                   :ARG0-of (s28h / have-rel-role-91~2
+                                  :ARG1 (s28p / person~0
+                                              :name (s28n / name~0
+                                                          :op1 "Asta"~0))
+                                  :ARG2 (s28f / father~2)))
+      :ARG1 (s28n2 / note~5)
+      :event-structure (se / subevents
+                           :E (h / has_information
+                                 :AGENT s28r
+                                 :TOPIC s28n2)
+                           :e1 (t / transfer_info
+                                  :AGENT s28r
+                                  :TOPIC s28n2
+                                  :?RECIPIENT (R / ROLE))
+                           :e2 (a / and
+                                  :op1 (h1 / has_information
+                                           :?RECIPIENT (R1 / ROLE)
+                                           :TOPIC s28n2)
+                                  :op2 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt29
+# ::snt29 He told Asta and Sharkie , " This note is from a little girl .
+(s29t / tell-01~1
+      :ARG0 (s29h / he~0)
+      :ARG1 (s29n3 / note~8
+                   :mod (s29t2 / this~7)
+                   :source (s29g / girl~13
+                                 :mod (s29l / little~12)))
+      :ARG2 (s29a / and~3
+                  :op1 (s29p / person~2
+                             :name (s29n / name~2
+                                         :op1 "Asta"~2))
+                  :op2 (s29p2 / person~4
+                              :name (s29n2 / name~4
+                                           :op1 "Sharkie"~4)))
+      :event-structure (se / subevents
+                           :E (h / has_information
+                                 :AGENT s29t
+                                 :TOPIC s29n3)
+                           :e1 (t / transfer_info
+                                  :AGENT s29t
+                                  :TOPIC s29n3
+                                  :RECIPIENT s29a)
+                           :e2 (a / and
+                                  :op1 (h1 / has_information
+                                           :RECIPIENT s29a
+                                           :TOPIC s29n3)
+                                  :op2 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt30
+# ::snt30 She wants to be your friend .
+(s30w / want-01~1
+      :ARG0 (s30s / she~0)
+      :ARG1 (s30h / have-rel-role-91~5
+                  :ARG1 (s30y / you~4)
+                  :ARG2 (s30f / friend~5)
+                  :ARG0 "s")
+      :event-structure (se / subevents
+                           :e1 (h / has_organization_role
+                                  :polarity -
+                                  :THEME (R / ROLE)
+                                  :?ATTRIBUTE (R1 / ROLE)
+                                  :BENEFICIARY (R2 / ROLE))
+                           :e2 (d / do
+                                  :ACTION s30w
+                                  :AGENT s30w)
+                           :e3 (a / and
+                                  :op1 (h1 / has_organization_role
+                                           :THEME (R3 / ROLE)
+                                           :?ATTRIBUTE (R4 / ROLE)
+                                           :BENEFICIARY (R5 / ROLE))
+                                  :op2 (c / cause))))
+
+
+# ::snt_id::amr-exp::snt31
+# ::snt31 If you want to be her friend , we can write a note to her .
+(s31p / possible-01~9
+      :ARG1 (s31w3 / write-01~10
+                   :ARG0 (s31w2 / we~8)
+                   :ARG1 (s31n / note~12)
+                   :ARG2 (s31s / she~14)
+                   :event-structure (se / subevents
+                                        :E (h / has_information
+                                              :AGENT s31p
+                                              :TOPIC s31n)
+                                        :e1 (t / transfer_info
+                                               :AGENT s31p
+                                               :TOPIC s31n
+                                               :RECIPIENT s31s)
+                                        :e2 (a / and
+                                               :op1 (h1 / has_information
+                                                        :RECIPIENT s31s
+                                                        :TOPIC s31n)
+                                               :op2 (c / cause))))
+      :condition (s31w / want-01~2
+                       :ARG0 (s31y / you~1)
+                       :ARG1 (s31h / have-rel-role-91~6
+                                   :ARG2 (s31f / friend~6)
+                                   :ARG0 "y"
+                                   :ARG1 "s")
+                       :event-structure (se1 / subevents
+                                             :e1 (h2 / has_organization_role
+                                                     :polarity -
+                                                     :THEME (R / ROLE)
+                                                     :?ATTRIBUTE (R1 / ROLE)
+                                                     :BENEFICIARY (R2 / ROLE))
+                                             :e2 (d / do
+                                                    :ACTION s31w
+                                                    :AGENT s31w)
+                                             :e3 (a1 / and
+                                                     :op1 (h3 / has_organization_role
+                                                              :THEME (R3 / ROLE)
+                                                              :?ATTRIBUTE (R4 / ROLE)
+                                                              :BENEFICIARY (R5 / ROLE))
+                                                     :op2 (c1 / cause)))))
+
+
+# ::snt_id::amr-exp::snt32
+# ::snt32 But you have to find another bottle so we can send it to her .
+(s32c / contrast-01~0
+      :ARG2 (s32o / obligate-01~2
+                  :ARG1 (s32y / you~1)
+                  :ARG2 (s32f / find-01~4
+                              :purpose (s32p / possible-01~9
+                                             :ARG1 (s32s / send-01~10
+                                                         :ARG0 (s32w / we~8)
+                                                         :ARG1 (s32b / bottle~6
+                                                                     :mod (s32a / another~5))
+                                                         :ARG2 (s32s2 / she~13)
+                                                         :event-structure (se2 / subevents
+                                                                               :e1 (a6 / and
+                                                                                       :op1 (h5 / has_location
+                                                                                                :THEME s32s
+                                                                                                :INITIAL_LOCATION (R10 / ROLE))
+                                                                                       :op2 (c3 / confined
+                                                                                                :polarity -
+                                                                                                :THEME s32s))
+                                                                               :e2 (d1 / do
+                                                                                       :ACTION s32s
+                                                                                       :AGENT s32p)
+                                                                               :ë3 (a7 / and
+                                                                                       :op1 (m1 / motion
+                                                                                                :THEME s32s
+                                                                                                :TRAJECTORY (R11 / ROLE))
+                                                                                       :op2 (h6 / has_location
+                                                                                                :polarity -
+                                                                                                :THEME s32s
+                                                                                                :INITIAL_LOCATION (R12 / ROLE))
+                                                                                       :op3 (c4 / cause))
+                                                                               :e4 (a8 / and
+                                                                                       :op1 (h7 / has_location
+                                                                                                :THEME s32s
+                                                                                                :?DESTINATION (R13 / ROLE))
+                                                                                       :op2 (c5 / confined
+                                                                                                :THEME s32s)))))
+                              :ARG0 "y"
+                              :ARG1 "b"
+                              :event-structure (se1 / subevents
+                                                    :e1 (a4 / and
+                                                            :op1 (h1 / has_possession
+                                                                     :?SOURCE (R7 / ROLE)
+                                                                     :THEME s32b)
+                                                            :op2 (h2 / has_possession
+                                                                     :polarity -
+                                                                     :AGENT s32o
+                                                                     :THEME s32b))
+                                                    :e2 (t / transfer
+                                                           :AGENT s32o
+                                                           :THEME s32b
+                                                           :?SOURCE (R8 / ROLE))
+                                                    :e3 (a5 / and
+                                                            :op1 (c2 / cause)
+                                                            :op2 (h3 / has_possession
+                                                                     :AGENT s32o
+                                                                     :THEME s32b)
+                                                            :op3 (h4 / has_possession
+                                                                     :polarity -
+                                                                     :?SOURCE (R9 / ROLE)
+                                                                     :THEME s32b))))
+                  :event-structure (se / subevents
+                                       :e1 (a / and
+                                              :op1 (d / do
+                                                      :ACTION s32o
+                                                      :AGENT (R / ROLE))
+                                              :op2 (m / manner
+                                                      :V_MANNER (R1 / ROLE)
+                                                      :AGENT (R2 / ROLE)))
+                                       :e2 (a1 / and
+                                               :op1 (h / has_emotional_state
+                                                       :PATIENT (R3 / ROLE)
+                                                       :V_FINAL_STATE (R4 / ROLE))
+                                               :op2 (c / cause))
+                                       :e3 (a2 / and
+                                               :op1 (a3 / act
+                                                        :PATIENT (R5 / ROLE)
+                                                        :RESULT (R6 / ROLE))
+                                               :op2 (c1 / cause)))))
+
+
+# ::snt_id::amr-exp::snt33
+# ::snt33 "
+(s33q / quote-01~0)
+
+
+# ::snt_id::amr-exp::snt34
+# ::snt34 And that is what they did .
+(s34a / and~0
+      :op2 (s34d / do-02~5
+                 :ARG0 (s34t2 / they~4)
+                 :ARG1 (s34t3 / thing~3
+                              :domain (s34t / that~1))
+                 :event-structure (se / subevents
+                                      :e1 (a / act
+                                             :AGENT (R / ROLE)
+                                             :EVENTUALITY (R1 / ROLE)))))
+
+
